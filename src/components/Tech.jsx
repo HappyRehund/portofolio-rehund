@@ -40,7 +40,7 @@ function Tech() {
                     >
                       <span className="text-sm">{skill.name}</span>
                       <div className="flex gap-1">
-                        {[Array(5).fill(0)].map((_, i) => (
+                        {Array(5).fill(0).map((_, i) => (
                           <div
                             key={i}
                             className={`w-2 h-2 rounded-full ${
