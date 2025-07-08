@@ -5,7 +5,7 @@ function Tech() {
   return (
     // wrapper section
     <section id="teknologi" className="py-20 bg-base-200">
-        {/* container */}
+      {/* container */}
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-12">
@@ -17,14 +17,14 @@ function Tech() {
         </div>
         {/* Section Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Cards here */}
+          {/* Cards here */}
           {techCategories.map((category, index) => (
             // card wrapper (tiap card)
             <div
               key={index}
               className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow"
             >
-                {/* Card content */}
+              {/* Card content */}
               <div className="card-body">
                 {/* wrapper untuk icon dan tittle */}
                 <div className="flex items-center gap-3 mb-4">
@@ -40,7 +40,7 @@ function Tech() {
                     >
                       <span className="text-sm">{skill.name}</span>
                       <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
+                        {[Array(5).fill(0)].map((_, i) => (
                           <div
                             key={i}
                             className={`w-2 h-2 rounded-full ${
@@ -59,7 +59,7 @@ function Tech() {
 
         {/* Content Dibawah */}
         <div className="mt-12 items-center justify-center flex">
-            {/* stats wrapper */}
+          {/* stats wrapper */}
           <div className="stats shadow">
             {/* stat 1 */}
             <div className="stat">
