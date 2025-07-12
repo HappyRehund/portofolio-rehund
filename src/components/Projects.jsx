@@ -5,29 +5,28 @@ import { ExternalLink, Eye, Github } from "lucide-react";
 function Projects() {
   return (
     // section wrapper
-    <section id="proyek" className="py-20 bg-base-100">
-        {/* container */}
+    <section id="projects" className="py-20 bg-base-100">
+      {/* container */}
       <div className="container mx-auto px-4">
         {/* section title wrapper */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Proyek Terbaru</h2>
           <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
-            Beberapa proyek yang telah saya kerjakan, menampilkan keahlian dan
-            kreativitas dalam pengembangan web.
+            Beberapa proyek yang telah saya kerjakan, menampilkan keahlian dalam pengembangan web.
           </p>
         </div>
 
         {/* section content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {/* content */}
+          {/* content */}
           {projects.map((project, index) => (
             // card wrapper (tiap card)
             <div
               key={index}
               className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all"
             >
-                {/* image */}
-              <figure className="h-48 overflow-hidden">
+              {/* image */}
+              <figure className="h-[480px] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -57,16 +56,7 @@ function Projects() {
                     rel="noopener noreferrer"
                   >
                     <Eye className="h-4 w-4" />
-                    Demo
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    className="btn btn-outline btn-sm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="h-4 w-4" />
-                    Code
+                    Lihat
                   </a>
                 </div>
               </div>
@@ -76,9 +66,14 @@ function Projects() {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <a href="#" className="btn btn-outline btn-lg">
+          <a
+            href="https://github.com/HappyRehund"
+            target="blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline btn-lg"
+          >
             <ExternalLink className="h-5 w-5" />
-            Lihat Semua Proyek
+            Lihat Github Saya
           </a>
         </div>
       </div>

@@ -3,14 +3,14 @@ import React from "react";
 
 function Contact() {
   return (
-    <section className="py-20 bg-base-200">
+    <section id="contact" className="py-20 bg-base-200">
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="mb-16">
           <h2 className="text-4xl font-bold mb-4 text-center">Hubungi Saya</h2>
           <p className="text-lg text-base-content/70 max-w-2xl mx-auto text-center">
-            Mari berdiskusi tentang proyek Anda! Saya siap membantu mewujudkan
-            ide digital Anda.
+            Saya selalu terbuka untuk diskusi dan pertanyaan. Jangan
+            ragu untuk menghubungi saya melalui informasi kontak di bawah ini.
           </p>
         </div>
 
@@ -32,21 +32,11 @@ function Contact() {
                   <div>
                     <p className="font-medium">Email</p>
                     <p className="text-base-content/70">
-                      ahmad.developer@email.com
+                      rayhanardian045@gmail.com
                     </p>
                   </div>
                 </div>
 
-                {/* card 2 */}
-                <div className="flex items-center gap-4">
-                  <div className="btn btn-circle btn-secondary btn-sm">
-                    <Phone className="h-4 w-4" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Telepon</p>
-                    <p className="text-base-content/70">+62 812-3456-7890</p>
-                  </div>
-                </div>
 
                 {/* card 3 */}
                 <div className="flex items-center gap-4">
@@ -55,7 +45,7 @@ function Contact() {
                   </div>
                   <div>
                     <p className="font-medium">Lokasi</p>
-                    <p className="text-base-content/70">Jakarta, Indonesia</p>
+                    <p className="text-base-content/70">Sleman, Yogyakarta</p>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import { techCategories } from "../helper/TechHelper";
 function Tech() {
   return (
     // wrapper section
-    <section id="teknologi" className="py-20 bg-base-200">
+    <section id="tech" className="py-20 bg-base-200">
       {/* container */}
       <div className="container mx-auto px-4">
         {/* Section Title */}

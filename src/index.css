@@ -1,4 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: valentine --default
+  themes: halloween --default
+}
+
+html {
+  scroll-behavior: smooth;
 }

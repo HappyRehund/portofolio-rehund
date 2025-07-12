@@ -1,42 +1,45 @@
+import project1 from "../assets/projects/project-1.webp";
+import project2 from "../assets/projects/project-2.webp";
+import project3 from "../assets/projects/project-3.webp";
+
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "PowerTOBK",
     description:
-      "Platform e-commerce lengkap dengan fitur keranjang belanja, pembayaran, dan dashboard admin.",
-    image:
-      "Foto-diri-rayhan.jpg",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "A tryout platform representing Computer Science UGM developed as a group project. I worked on the frontend for the aptitude test, which helps users determine which of the seven fields (FE, BE, Mobapps, UI/UX, Cybersecurity, Data Science, Game Development) best suits them based on their quiz results.",
+    image: project3,
+    tech:  [
+      "Typescript",
+      "Golang",
+      "Docker",
+      "Gin",
+      "Postgresql",
+      "Shadcn",
+      "motion",
+    ],
+    demoUrl: "https://omahtobk-static.vercel.app",
   },
   {
-    title: "Learning Management System",
+    title: "GDGOC Expense Tracker",
     description:
-      "Sistem pembelajaran online dengan fitur video streaming, quiz, dan tracking progress siswa.",
-    image:
-      "Foto-diri-rayhan.jpg",
-    tech: ["Next.js", "TypeScript", "MongoDB", "AWS"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "GDGOC's holiday study case : An expense tracker application that allows users to track their expenses and income, with a feature that displays the total balance.",
+    image: project2,
+    tech: [
+      "Typescript",
+      "Zod",
+      "Prisma",
+      "Postgresql",
+      "Shadcn",
+      "Clerk",
+    ],
+    demoUrl: "https://gdgoc-studycase.vercel.app/",
   },
   {
-    title: "Task Management App",
+    title: "Malpres MIPA 2024 Web",
     description:
-      "Aplikasi manajemen tugas dengan fitur kolaborasi tim, deadline tracking, dan reporting.",
-    image:
-      "Foto-diri-rayhan.jpg",
-    tech: ["Vue.js", "Firebase", "Tailwind CSS"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "Dashboard cuaca dengan visualisasi data real-time dan prediksi cuaca berbagai kota.",
-    image:
-      "Foto-diri-rayhan.jpg",
-    tech: ["React", "Chart.js", "OpenWeather API"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "The Faculty of Science event website, 'MIPA Appreciation Night,' provides a platform for voting and offers information about the event.",
+    image: project1,
+    tech:  ["NextJs", "React", "motion", "Google Spreadsheet API"],
+    demoUrl: "https://malpres2024.vercel.app/",
   },
 ];

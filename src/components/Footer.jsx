@@ -12,9 +12,9 @@ export default function Footer() {
 
             {/* col 1 & 2*/}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Rehund Kece</h3>
+            <h3 className="text-2xl font-bold mb-4">Rehund Ardian</h3>
             <p className="text-base-content/70 mb-4">
-              Web developer yang suka tidur
+              Web developer
             </p>
             <div className="flex gap-4">
               <a href="#" className="btn btn-circle btn-outline btn-sm">
@@ -35,8 +35,8 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="#beranda" className="link link-hover">Beranda</a></li>
               <li><a href="#tentang" className="link link-hover">Tentang</a></li>
-              <li><a href="#pengalaman" className="link link-hover">Pengalaman</a></li>
-              <li><a href="#teknologi" className="link link-hover">Teknologi</a></li>
+              <li><a href="#projects" className="link link-hover">Pengalaman</a></li>
+              <li><a href="#tech" className="link link-hover">Teknologi</a></li>
             </ul>
           </nav>
           

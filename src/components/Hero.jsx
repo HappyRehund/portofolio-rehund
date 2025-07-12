@@ -1,56 +1,160 @@
-import { Download, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Eye, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
+import { motion } from "motion/react";
 
 function Hero() {
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  const imageVariants = {
+    hidden: { scale: 0, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.05,
+      transition: { duration: 0.2 },
+    },
+    tap: { scale: 0.95 },
+  };
+
   return (
     <main
       id="beranda"
       className="hero min-h-screen bg-gradient-to-br from-primary/10 to-secondary/20"
     >
-      <div className="hero-content text-center mt-4 md:m-0 lg:-mt-6">
+      <motion.div
+        className="hero-content text-center mt-4 md:m-0 lg:-mt-6"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {/* Container */}
         <div className="max-w-4xl">
           {/* Image */}
-          <div className="avatar mb-8">
-            <div className="w-64 lg:w-80 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              <img src="Foto-diri-rayhan.jpg" alt="foto saya" />
-            </div>
-          </div>
+          <motion.div className="avatar mb-8" variants={imageVariants}>
+            <motion.div className="w-64 lg:w-80 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <img
+                src="Foto_Rehund.webp"
+                alt="foto saya"
+                width={1400}
+                height={720}
+                priority
+              />
+            </motion.div>
+          </motion.div>
+
           {/* Text Section */}
-          <h1 className="text-3xl lg:text-5xl font-bold mb-2">
+          <motion.h1
+            className="text-3xl lg:text-5xl font-bold mb-2"
+            variants={itemVariants}
+          >
             Halo, Saya Rehund
-          </h1>
-          <p className="text-xl mb-2 font-semibold">Seorang Web Developer</p>
-          <p className="py-4 text-base-content/70">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-            aut vero minus exercitationem non, rerum, commodi nostrum corporis
-            atque odio, quasi at culpa. Dolorem neque tenetur quam accusantium
-            fuga error? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Maxime vero ipsum nihil provident, sunt rerum ea voluptatum
-            voluptatem molestiae architecto ad facilis excepturi recusandae quae
-            totam laboriosam alias assumenda exercitationem. Lorem ipsum dolor
-            sit amet consectetur, adipisicing elit.
-          </p>
-          <div className="flex gap-4 justify-center mb-6">
-            <a href="#kontak" className="btn btn-primary">
+          </motion.h1>
+
+          <motion.p
+            className="text-xl lg:text-3xl mb-2 font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+            variants={itemVariants}
+          >
+            Web Developer
+          </motion.p>
+
+          <motion.p
+            className="py-4 text-base-content/70"
+            variants={itemVariants}
+          >
+            I am a web developer with experience in building websites, eager to
+            gain more hands-on opportunities to enhance and test my skills. I'm
+            also looking to expand my network and connect with diverse teams for
+            collaborative projects. My front-end skills include HTML, CSS, and
+            JavaScript, with experience in frameworks like React, Next.js, and
+            Tailwind. On the back-end, I am currently building my expertise,
+            having worked with technologies like Express.js, MongoDB, and
+            Node.js (which I am actively learning). My goal is to grow into a
+            skilled full-stack developer.
+          </motion.p>
+
+          <motion.div
+            className="flex gap-4 justify-center mb-6"
+            variants={itemVariants}
+          >
+            <motion.a
+              href="#contact"
+              className="btn btn-primary"
+              variants={buttonVariants}
+              whileHover="hover"
+              whileTap="tap"
+            >
               <Mail className="h-4 w-4" />
               Hubungi Saya
-            </a>
-            <button className="btn btn-outline">
-              <Download className="h-4 w-4" />
-              Download CV
-            </button>
-          </div>
-          <div className="flex gap-6 justify-center">
-            <a href="#" className="btn btn-circle btn-outline">
+            </motion.a>
+            <motion.a
+              href="/CV-Rehund.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+              variants={buttonVariants}
+              whileHover="hover"
+              whileTap="tap"
+            >
+              <Eye className="h-4 w-4" />
+              Lihat CV
+            </motion.a>
+          </motion.div>
+
+          <motion.div
+            className="flex gap-6 justify-center"
+            variants={itemVariants}
+          >
+            <motion.a
+              href="https://github.com/HappyRehund"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-circle btn-outline"
+              whileTap={{ scale: 0.9 }}
+            >
               <Github className="h-5 w-5" />
-            </a>
-            <a href="#" className="btn btn-circle btn-outline">
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/rayhanardian0705"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-circle btn-outline"
+              whileTap={{ scale: 0.9 }}
+            >
               <Linkedin className="h-5 w-5" />
-            </a>
-          </div>
+            </motion.a>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 }
