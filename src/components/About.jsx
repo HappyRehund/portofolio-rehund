@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code, Palette, Zap, Users } from 'lucide-react';
+import { Brain } from 'lucide-react';
 
 export default function About() {
   return (
@@ -33,13 +34,8 @@ export default function About() {
                 <div className="stats shadow">
                     {/* stat 1 */}
                   <div className="stat">
-                    <div className="stat-title">Proyek Selesai</div>
-                    <div className="stat-value text-primary">25+</div>
-                  </div>
-                  {/* stat 2 */}
-                  <div className="stat">
-                    <div className="stat-title">Teman Puas</div>
-                    <div className="stat-value text-accent">2+</div>
+                    <div className="stat-title">Proyek Selesai (Web & Non-Web)</div>
+                    <div className="stat-value text-primary">8+</div>
                   </div>
                 </div>
               </div>
@@ -61,10 +57,10 @@ export default function About() {
             {/* cols 2 */}
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body items-center text-center">
-                <Palette className="h-12 w-12 text-error-contenty mb-4" />
-                <h4 className="card-title">Desain</h4>
+                <Brain className="h-12 w-12 text-error-contenty mb-4" />
+                <h4 className="card-title">Logic</h4>
                 <p className="text-sm text-base-content/70">
-                  Menciptakan antarmuka yang indah dan user-friendly
+                  Membangun business process dengan logika yang baik
                 </p>
               </div>
             </div>

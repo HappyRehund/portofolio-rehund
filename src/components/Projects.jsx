@@ -73,7 +73,7 @@ function Projects() {
             className="btn btn-outline btn-lg"
           >
             <ExternalLink className="h-5 w-5" />
-            Lihat Github Saya
+            For More Project Lihat Github Saya
           </a>
         </div>
       </div>

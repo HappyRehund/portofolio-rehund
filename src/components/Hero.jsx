@@ -52,7 +52,7 @@ function Hero() {
       className="hero min-h-screen bg-gradient-to-br from-primary/10 to-secondary/20"
     >
       <motion.div
-        className="hero-content text-center mt-4 md:m-0 lg:-mt-6"
+        className="hero-content text-center pt-8 lg:pt-20 md:m-0 lg:-mt-6 pb-12"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -97,9 +97,7 @@ function Hero() {
             collaborative projects. My front-end skills include HTML, CSS, and
             JavaScript, with experience in frameworks like React, Next.js, and
             Tailwind. On the back-end, I am currently building my expertise,
-            having worked with technologies like Express.js, MongoDB, and
-            Node.js (which I am actively learning). My goal is to grow into a
-            skilled full-stack developer.
+            having worked with technologies like SpringBoot Java also Cloud computing things (Google Cloud Platform).
           </motion.p>
 
           <motion.div
@@ -117,7 +115,7 @@ function Hero() {
               Hubungi Saya
             </motion.a>
             <motion.a
-              href="/CV-Rehund.pdf"
+              href="/CV_Rehund.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"

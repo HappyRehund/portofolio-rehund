@@ -7,8 +7,7 @@ export const techCategories = [
       color: "text-primary",
       skills: [
         { name: "React", level: 5 },
-        { name: "Vue.js", level: 4 },
-        { name: "TypeScript", level: 4 },
+        { name: "Tanstack", level: 2 },
         { name: "Tailwind CSS", level: 5 },
         { name: "Next.js", level: 4 }
       ]
@@ -18,12 +17,9 @@ export const techCategories = [
       icon: <Server className="h-8 w-8" />,
       color: "text-secondary",
       skills: [
-        { name: "Node.js", level: 4 },
-        { name: "Python", level: 3 },
-        { name: "Express", level: 4 },
-        { name: "Django", level: 3 },
-        { name: "GraphQL", level: 3 }
-      ]
+        { name: "FastAPI", level: 3 },
+        { name: "Express", level: 3 },
+        { name: "SpringBoot", level: 4 },]
     },
     {
       title: "Database",
@@ -31,20 +27,19 @@ export const techCategories = [
       color: "text-accent",
       skills: [
         { name: "PostgreSQL", level: 4 },
-        { name: "MongoDB", level: 4 },
+        { name: "MongoDB", level: 2 },
         { name: "Redis", level: 3 },
-        { name: "MySQL", level: 4 },
-        { name: "Supabase", level: 3 }
+        { name: "MySQL", level: 4 }
       ]
     },
     {
-      title: "DevOps",
+      title: "Cloud Computing & DevOps",
       icon: <Code className="h-8 w-8" />,
       color: "text-warning",
       skills: [
         { name: "Docker", level: 3 },
-        { name: "AWS", level: 3 },
-        { name: "CI/CD", level: 4 },
+        { name: "AWS", level: 1 },
+        { name: "GCP", level: 3 },
         { name: "Git", level: 5 },
         { name: "Linux", level: 4 }
       ]
