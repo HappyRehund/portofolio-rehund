@@ -45,7 +45,7 @@ export const projects = [
   {
     title: "PowerTOBK",
     description:
-      "A tryout platform representing Computer Science UGM developed as a group project. I worked on the frontend for the aptitude test, which helps users determine which of the seven fields (FE, BE, Mobapps, UI/UX, Cybersecurity, Data Science, Game Development) best suits them based on their quiz results.",
+      "Tryout platform representing Computer Science UGM developed as a group project. I worked on the frontend for the aptitude test, which helps users determine which of the seven fields (FE, BE, Mobapps, UI/UX, Cybersecurity, Data Science, Game Development) best suits them based on their quiz results.",
     image: project3,
     tech:  [
       "NextJs",
@@ -105,7 +105,7 @@ export const course_projects = [
       "Junit & Mockito",
       "Docker",
     ],
-    demoUrl: "",
+    demoUrl: "https://github.com/HappyRehund/ecommerce-java",
   },
   {
     title: "AgCyRAG: an Agentic Knowledge Graph based RAG Framework for Automated Security Analysis",
@@ -135,6 +135,6 @@ export const course_projects = [
       "Sastrawi",
       "Beautiful Soup"
     ],
-    demoUrl: "",
+    demoUrl: "https://github.com/HappyRehund/SearchEngine-BM25-SportArticle",
   }
 ]
