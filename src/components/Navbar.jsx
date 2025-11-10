@@ -19,7 +19,7 @@ function Navbar() {
     >
       <div className="navbar-start">
         <nav className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost xl:hidden">
             <Menu className="w-5 h-5" />
           </div>
           <ul
@@ -65,9 +65,9 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        <p className="text-xl font-semibold lg:pl-36">Portofolio</p>
+        <p className="text-xl font-semibold xl:pl-36">Portofolio</p>
       </div>
-      <div className="navbar-end hidden lg:flex lg:pr-32">
+      <div className="navbar-end hidden xl:flex xl:pr-32">
         <nav>
           <ul className="menu menu-horizontal px-1">
             <li>

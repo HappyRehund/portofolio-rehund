@@ -1,25 +1,25 @@
 import React from "react";
-import { projects } from "../helper/ProjectHelper";
+import { course_projects } from "../helper/ProjectHelper";
 import { ExternalLink, Eye, Github } from "lucide-react";
 
-function Projects() {
+function CourseProjects() {
   return (
     // section wrapper
-    <section id="projects" className="pt-20 pb-10 bg-base-100">
+    <section id="projects" className="py-20 bg-base-100">
       {/* container */}
       <div className="container mx-auto px-4">
         {/* section title wrapper */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Proyek Client</h2>
+          <h2 className="text-4xl font-bold mb-4">Proyek Akademik dan Bootcamp</h2>
           <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
-            Beberapa proyek web-based yang telah saya kerjakan, menampilkan keahlian dalam pengembangan web sesuai kebutuhan client. Dengan tingkat kesulitan yang tidak mudah.
+            Beberapa proyek Akademik dan Bootcamp yang saya kerjakan berdasarkan keinginan saya sendiri.
           </p>
         </div>
 
         {/* section content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* content */}
-          {projects.map((project, index) => (
+          {course_projects.map((project, index) => (
             // card wrapper (tiap card)
             <div
               key={index}
@@ -63,9 +63,22 @@ function Projects() {
             </div>
           ))}
         </div>
+
+        {/* CTA */}
+        <div className="text-center mt-12">
+          <a
+            href="https://github.com/HappyRehund"
+            target="blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline btn-lg"
+          >
+            <ExternalLink className="h-5 w-5" />
+            For More Project Lihat Github Saya
+          </a>
+        </div>
       </div>
     </section>
   );
 }
 
-export default Projects;
+export default CourseProjects;

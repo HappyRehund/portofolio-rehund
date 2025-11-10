@@ -4,7 +4,7 @@ import { techCategories } from "../helper/TechHelper";
 function Tech() {
   return (
     // wrapper section
-    <section id="tech" className="py-20 bg-base-200">
+    <section id="tech" className="py-20 pb-40 bg-base-200">
       {/* container */}
       <div className="container mx-auto px-4">
         {/* Section Title */}
@@ -58,26 +58,29 @@ function Tech() {
         </div>
 
         {/* Content Dibawah */}
-        <div className="mt-12 items-center justify-center flex">
-          {/* stats wrapper */}
+        
+        {/* <div className="mt-12 items-center justify-center flex">
+          
           <div className="stats shadow">
-            {/* stat 1 */}
+            
             <div className="stat">
               <div className="stat-title">Bahasa Pemrograman</div>
               <div className="stat-value text-purple-800">3+</div>
             </div>
-            {/* stat 2 */}
+            
             <div className="stat">
               <div className="stat-title">Framework</div>
               <div className="stat-value textarea-success">10+</div>
             </div>
-            {/* stat 3 */}
+            
             <div className="stat">
               <div className="stat-title">Tools & Platform</div>
               <div className="stat-value text-accent">10+</div>
             </div>
           </div>
-        </div>
+
+        
+        </div> */}
       </div>
     </section>
   );

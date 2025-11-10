@@ -18,8 +18,9 @@ export const techCategories = [
       color: "text-secondary",
       skills: [
         { name: "FastAPI", level: 3 },
-        { name: "Express", level: 3 },
-        { name: "SpringBoot", level: 4 },]
+        { name: "Node.js & Express.js", level: 3 },
+        { name: "SpringBoot", level: 4 },
+      ]
     },
     {
       title: "Database",

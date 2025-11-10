@@ -1,5 +1,6 @@
 import About from "./components/About"
 import Contact from "./components/Contact"
+import CourseProjects from "./components/CourseProjects"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
@@ -19,6 +20,7 @@ function App() {
       <Tech />
       {/* Projects */}
       <Projects />
+      <CourseProjects />
       {/* Contact */}
       <Contact />
       {/* Footer */}

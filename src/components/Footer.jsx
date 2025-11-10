@@ -46,8 +46,8 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="#" className="link link-hover">Pengembangan Web</a></li>
               <li><a href="#" className="link link-hover">Backend</a></li>
-              <li><a href="#" className="link link-hover">Mabar</a></li>
-              <li><a href="#" className="link link-hover">Muncak</a></li>
+              <li><a href="#" className="link link-hover">Frontend</a></li>
+              <li><a href="#" className="link link-hover">Mobapps (Jika ada waktu)</a></li>
             </ul>
           </nav>
         </div>
