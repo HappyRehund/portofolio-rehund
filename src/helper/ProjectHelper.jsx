@@ -9,6 +9,8 @@ import course_project2 from "../assets/course-projects/course-project-2.webp";
 import course_project3 from "../assets/course-projects/course-project-3.webp";
 import course_project4 from "../assets/course-projects/course-project-4.webp";
 
+//ASU
+
 export const projects = [
   {
     title: "GEMASTIK 2025 - Muffler Monitoring System",
