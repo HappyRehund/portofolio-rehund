@@ -26,7 +26,7 @@ function Projects() {
             // card wrapper (tiap card)
             <div
               key={index}
-              className="card bg-base-200 shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+              className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all"
             >
               {/* image */}
               <figure className="h-[480px] overflow-hidden">
