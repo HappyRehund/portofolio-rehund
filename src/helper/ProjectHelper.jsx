@@ -2,7 +2,7 @@ import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
-import project5 from "../assets/projects/project-5.webp";
+import project5 from "../assets/projects/Project-5.webp";
 
 import course_project1 from "../assets/course-projects/course-project-1.webp";
 import course_project2 from "../assets/course-projects/course-project-2.webp";
