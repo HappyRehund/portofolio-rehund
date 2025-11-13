@@ -4,7 +4,6 @@ import { ExternalLink, Eye, Github } from "lucide-react";
 
 function CourseProjects() {
   return (
-    // section wrapper
     <section id="projects" className="py-20 bg-base-100">
       {/* container */}
       <div className="container mx-auto px-4">
