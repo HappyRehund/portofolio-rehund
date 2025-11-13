@@ -30,7 +30,7 @@ function CourseProjects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform"
+                  className="w-full h-full object-cover transition-transform"
                 />
               </figure>
               {/* card body wrapper (description and tech stack) */}

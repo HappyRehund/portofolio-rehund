@@ -7,6 +7,7 @@ import project5 from "../assets/projects/project-5.webp";
 import course_project1 from "../assets/course-projects/course-project-1.webp";
 import course_project2 from "../assets/course-projects/course-project-2.webp";
 import course_project3 from "../assets/course-projects/course-project-3.webp";
+import course_project4 from "../assets/course-projects/course-project-4.webp";
 
 export const projects = [
   {
@@ -27,7 +28,7 @@ export const projects = [
       "Google Cloud Run",
       "YOLOv8"
     ],
-    demoUrl: "https://brong-system.web.app/",
+    demoUrl: "https://github.com/HappyRehund/muffler-monitoring-web",
   },
   {
     title: "GELEX 2025",
@@ -88,9 +89,26 @@ export const projects = [
 
 export const course_projects = [
   {
+    title: "Blockchain Bootcamp App",
+    description:
+      "Backend API for a blockchain-based bootcamp application built with FastAPI and Ethereum to issue verifiable digital certificates. Designed as a hybrid system, the app integrates blockchain as an immutable layer for certification data while managing authentication and user progress through PostgreSQL. When a user completes a bootcamp module, the system automatically issues a certificate and records it on the blockchain for tamper-proof verification.",
+    image: course_project4,
+    tech:  [
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Ethereum",
+      "Solidity",
+      "Geth",
+      "Alembic",
+      "Docker"
+    ],
+    demoUrl: "https://github.com/HappyRehund/quiz-app-blockchain",
+  },
+  {
     title: "E-commerce SpringBoot Backend",
     description:
-      "Backend RESTful API for an e-commerce platform built with Spring Boot, implementing a comprehensive ERD covering users, products, orders, and payments. Integrated Xendit for online transactions, Flyway for schema migration, and Resilience4j for fault tolerance. The project also includes observability setup with Prometheus and Grafana, and message streaming via Kafka. Developed while learning best backend practices through FastCampus under Elanq’s mentorship.",
+      "Backend RESTful API for an e-commerce platform built with Spring Boot, implementing a comprehensive ERD covering users, products, orders, and payments. Integrated Xendit for online transactions, Flyway for schema migration, and Resilience4j for fault tolerance. The project also includes observability setup with Prometheus and Grafana, and message streaming via Kafka. Developed while learning best backend practices through FastCampus.",
     image: course_project3,
     tech:  [
       "Springboot",

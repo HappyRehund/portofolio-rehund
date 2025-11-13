@@ -12,7 +12,10 @@ function Projects() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Proyek Client</h2>
           <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
-            Beberapa proyek web-based yang telah saya kerjakan, menampilkan keahlian dalam pengembangan web sesuai kebutuhan client. Dengan tingkat kesulitan yang tidak mudah.
+            Beberapa proyek web-based yang telah saya kerjakan, menampilkan keahlian dalam pengembangan web sesuai kebutuhan client.
+          </p>
+          <p className="text-lg text-warning/70 max-w-2xl mx-auto">
+            Tambahan, Bbrp projects hanya saya sertakan link github, karena terdapat biaya deployment yang tidak bisa saya tanggung
           </p>
         </div>
 
@@ -23,14 +26,14 @@ function Projects() {
             // card wrapper (tiap card)
             <div
               key={index}
-              className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all"
+              className="card bg-base-200 shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
             >
               {/* image */}
               <figure className="h-[480px] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform"
+                  className="w-full h-full object-cover transition-transform"
                 />
               </figure>
               {/* card body wrapper (description and tech stack) */}
