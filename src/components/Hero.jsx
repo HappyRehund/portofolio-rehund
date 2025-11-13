@@ -115,7 +115,7 @@ function Hero() {
               Hubungi Saya
             </motion.a>
             <motion.a
-              href="/CV_Rehund.pdf"
+              href="/CV_RayhanFirdausArdian_November.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
